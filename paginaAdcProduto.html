@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleHeader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Cadastrando Produto</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <img src="imgs/logo.png" alt="logo da empresa" id="img">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="paginaListaProdutos.html">Listar Produtos</a>
+                        <a href="paginaAdcProduto.html">Adicionar Produto</a>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="wrap">
+            <div class="principal">
+                <div class="formulario">
+                    <form action="#">
+                        <div class="formConteudo">
+                            <div class="fragForm">
+                                <label for="nome">Nome</label>
+                                <input type="text"id="nome" placeholder="Nome produto">
+                            </div>
+        
+                            <div class="fragForm">
+                                <label for="preco">Preço</label>
+                                <input type="text" id="preco" placeholder="0,00">
+                                
+                            </div>
+        
+                            <div class="fragForm">
+                                <label for="Descricao">Descrição</label>
+                                <textarea name="Descricao" id="Descricao" cols="30" rows="5"></textarea>
+                            </div>
+
+                            <div class="fragForm">
+                                <input type="submit" value="Cadastrar" id="botao">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
