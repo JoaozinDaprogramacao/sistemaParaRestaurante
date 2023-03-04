@@ -1,57 +1,68 @@
-.wrap, .formulario{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.formConteudo {
-    width: 300px;
-    height: px;
+body{
+    background-color: #1b2036;
 }
 
-.principal {
-    width: 450px;
-    height: 400px;
-    border-radius: 10px;
-}
-
-h3 {
-    text-align: center;
-}
-
-label {
-    float:left;
-    display:block;
-    width: 80px;
-    font-family: 'Roboto', sans-serif;
-}
-
-input, textarea {
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 2px;
-    padding: 10px 10px 5px;
-}
-
-label, h3 {
-    color: #131313f0;
-}
-
-.fragForm {
-    margin-left: 5%;
-    margin-top: 5px;
+.logo-img{
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
 }
 
 
-#botao {    
-    letter-spacing: .1.9rem;
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    margin-left: 12px;
-    background-color: #2c8117;
-    text-align: center;
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+form {
+  width: 300px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+form h2 {
+  text-align: center;
+}
+
+form input[type=text],
+form input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+}
+
+form button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 480px) {
+  form {
+    width: 90%;
+  }
 }
