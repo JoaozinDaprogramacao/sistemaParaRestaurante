@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="Assets/css/stylePaginaAdcProduto.css">
-    <link rel="stylesheet" href="Assets/css/reset.css">
     <link rel="stylesheet" href="Assets/css/style.css">
-    <link rel="stylesheet" href="Assets/css/styleHeader.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -16,17 +13,18 @@
 </head>
 <body>
     <header>
-
         <div class="caixa">
-            <img src="imgs/logo.png" alt="logo da empresa" id="img">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="paginaListaProdutos.html">Listar Produtos</a>
-                        <a href="paginaAdcProduto.html">Adicionar Produto</a>
-                        <a href="menu.html">Menu</a>
+            <div class="conteiner-img">
+                <img src="imgs/logo.png" alt="logo da empresa" id="img">
+            </div>
+            <nav class="navi-pages">
+                <ul id="ul-pages">
+                    <li">
+                        <a class="lista-pages" href="paginaListaProdutos.html">Listar Produtos</a>
+                        <a class="lista-pages" href="paginaAdcProduto.html">Adicionar Produto</a>
+                        <a class="lista-pages" href="menu.html">Menu</a>
                     </li>
-                </ul>
+                </ul>   
             </nav>
         </div>
     </header>
@@ -49,13 +47,12 @@
                                 
                             </div>
         
-                            <div class="fragForm">
-                                <label for="Descricao">Descrição</label>
-                                <textarea name="Descricao" id="Descricao" cols="30" rows="5"></textarea>
+                            <div class="fragForm-textArea">
+                                <textarea name="Descricao" id="Descricao" cols="30" rows="5" placeholder="Descrição"></textarea>
                             </div>
 
-                            <div class="fragForm">
-                                <input type="submit" value="Cadastrar Produto" id="botao">
+                            <div class="fragForm-botao">
+                                <input type="submit" value="Cadastrar Produto" class="botao">
 
                             </div>
                         </div>
